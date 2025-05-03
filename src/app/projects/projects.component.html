@@ -1,0 +1,38 @@
+<!-- ✅ Step 1: Add Buttons + Modal to `projects.component.html` -->
+<div class="section-wrapper">
+  <!-- Your hero content -->
+
+
+<section id="projects" class="projects">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" [alt]="project.title" />
+      <div class="project-info">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tags">
+          <span *ngFor="let tool of project.tools">{{ tool }}</span>
+        </div>
+        <div class="buttons">
+          <a [href]="project.github" target="_blank" class="btn github">GitHub</a>
+          <button (click)="openModal(project)" class="btn preview">Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🪟 Modal Preview -->
+  <div class="modal-backdrop" *ngIf="selectedProject" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h3>{{ selectedProject.title }}</h3>
+      <p>{{ selectedProject.description }}</p>
+      <img [src]="selectedProject.image" *ngIf="selectedProject.image" alt="Preview" />
+      <div class="tags">
+        <span *ngFor="let tool of selectedProject.tools">{{ tool }}</span>
+      </div>
+      <button class="btn close" (click)="closeModal()">Close</button>
+    </div>
+  </div>
+</section>
+</div>

@@ -1,0 +1,103 @@
+/* Global Theme Setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  background-color: #0e121b; /* Neumorphic-compatible dark background */
+  color: #f0f6fc;
+}
+
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neumorphic Base Box */
+.neumorphic-box {
+  background: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #242424;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  max-width: 1200px;
+  transition: all 0.3s ease-in-out;
+}
+
+body.light-mode .neumorphic-box {
+  background: #f3f3f3;
+  color: #111;
+  box-shadow: 4px 4px 10px #d1d1d1, -4px -4px 10px #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #242424;
+  margin: 1.5rem auto;
+  max-width: 1100px; /* ✅ Same width as other sections */
+  transition: all 0.3s ease;
+}
+
+body.light-mode .navbar {
+  background: #f3f3f3;
+  box-shadow: 4px 4px 10px #d1d1d1, -4px -4px 10px #ffffff;
+}
+
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c6ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00c6ff;
+}
+
+/* Dark/Light Mode Toggle Icon */
+.icon-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: #ffc107;
+  box-shadow: 4px 4px 10px #0a0a0a, -4px -4px 10px #242424;
+  transition: all 0.3s ease;
+}
+
+body.light-mode .icon-toggle {
+  background: #f3f3f3;
+  color: #ff9800;
+  box-shadow: 4px 4px 10px #d1d1d1, -4px -4px 10px #ffffff;
+}
+
+.icon-toggle:hover {
+  transform: scale(1.1);
+}
+ 

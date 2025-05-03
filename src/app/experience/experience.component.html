@@ -1,0 +1,39 @@
+<!-- <div class="section-wrapper">
+<div class="timeline">
+  <div
+    class="timeline-item"
+    *ngFor="let exp of experiences; let i = index"
+    #item
+    [class.show]="visibleItems[i]"
+  >
+    <div class="timeline-dot" [ngClass]="{ 'active': i === 0 }"></div>
+    <div class="timeline-content">
+      <h3>{{ exp.role }} <span>&#64; {{ exp.company }}</span></h3>
+      <p class="timeline-duration">{{ exp.duration }}</p>
+      <p>{{ exp.description }}</p>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<div class="section-wrapper">
+<section class="experience" id="experience">
+  <h2>👨‍💻 My Experience</h2>
+
+  <div class="timeline">
+    <div
+      class="timeline-item"
+      *ngFor="let exp of experiences; let i = index"
+      #item
+      [class.show]="visibleItems[i]"
+    >
+      <div class="timeline-dot" [ngClass]="{ 'active': i === 0 }"></div>
+      <div class="timeline-content">
+        <h3>{{ exp.role }} <span>&#64; {{ exp.company }}</span></h3>
+        <p class="timeline-duration">{{ exp.duration }}</p>
+        <p>{{ exp.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

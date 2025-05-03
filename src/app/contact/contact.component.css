@@ -1,0 +1,84 @@
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  border-radius: 2rem;
+  box-shadow: inset 8px 8px 16px #141414, inset -8px -8px 16px #1f1f1f;
+  color: #fff;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+body[data-theme='light'] .contact-section {
+  background-color: #f0f0f3;
+  color: #0d1117;
+  box-shadow: 6px 6px 12px #cfd4da, -6px -6px 12px #ffffff;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin: -1rem 0 2.2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Inputs + Textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 6px 6px 12px #141414, -6px -6px 12px #1f1f1f;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+body[data-theme='light'] .contact-form input,
+body[data-theme='light'] .contact-form textarea {
+  background-color: #f0f0f3;
+  color: #0d1117;
+  box-shadow: 6px 6px 12px #cfd4da, -6px -6px 12px #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: inset 4px 4px 8px #141414, inset -4px -4px 8px #1f1f1f;
+}
+
+body[data-theme='light'] .contact-form input:focus,
+body[data-theme='light'] .contact-form textarea:focus {
+  box-shadow: inset 4px 4px 8px #cfd4da, inset -4px -4px 8px #ffffff;
+}
+
+/* Submit Button */
+.contact-form button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px #141414, -4px -4px 8px #1f1f1f;
+  transition: transform 0.2s ease;
+}
+
+body[data-theme='light'] .contact-form button {
+  background: linear-gradient(145deg, #f8f8f8, #e6e6e6);
+  color: #0d1117;
+  box-shadow: 4px 4px 8px #cfd4da, -4px -4px 8px #ffffff;
+}
+
+.contact-form button:hover {
+  transform: scale(1.03);
+}

@@ -1,0 +1,16 @@
+<div class="section-wrapper tech-stack">
+<section class="tech-stack">
+  <h2>🛠 My Tech Stack</h2>
+  <p class="intro">
+    Here are some of the core tools and technologies I work with as a Data Engineer⬇️
+  </p>
+  <br>
+  <div class="stack-grid">
+    <div class="stack-card" *ngFor="let item of stack">
+      <div class="icon">{{ item.icon }}</div>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
+</section>
+</div>

@@ -1,0 +1,237 @@
+/* ========== PROJECTS SECTION ========== */
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem; /* reduced vertical padding */
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin: -2rem 0 2.5rem; /* balanced spacing above and below */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* bigger cards */
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: #1e1e1e;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, 0.03),
+    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
+    0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+body.light-mode .project-card {
+  background: #f3f3f3;
+  box-shadow:
+    -4px -4px 12px #ffffff,
+    4px 4px 12px #d1d1d1;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Project image */
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+/* Info section */
+.project-info {
+  padding: 1.5rem;
+  text-align: left;
+  background-color: #1e1e1e;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #fff;
+}
+
+body.light-mode .project-info h3 {
+  color: #111;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0.75rem 0 1rem;
+}
+
+body.light-mode .project-info p {
+  color: #444;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tags span {
+  background-color: #1f1f1f;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #eee;
+  box-shadow:
+    inset -2px -2px 4px rgba(255, 255, 255, 0.02),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.tags span:hover {
+  background-color: #2a2a2a;
+  color: #00c6ff;
+}
+
+body.light-mode .tags span {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+body.light-mode .tags span:hover {
+  background-color: #d0e8ff;
+  color: #007bff;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 115px;
+  height: 34px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: none;
+  color: #00c6ff;
+  background-color: #111;
+  box-shadow:
+    -2px -2px 6px rgba(255, 255, 255, 0.04),
+    2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #00c6ff;
+  color: #111;
+}
+
+body.light-mode .btn {
+  background: #f3f3f3;
+  color: #007bff;
+  box-shadow: -2px -2px 6px #ffffff, 2px 2px 6px #d1d1d1;
+}
+
+body.light-mode .btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Preview button specific */
+.btn.preview:hover {
+  background-color: #00c6ff !important;
+  color: #111 !important;
+}
+
+body.light-mode .btn.preview:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* ========== MODAL ========== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 90%;
+  max-width: 600px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.btn.close {
+  background-color: #e91e63;
+  color: white;
+  margin-top: 1rem;
+}
+
+.modal-content button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #ff7875;
+}
+
+/* ========== Section Wrapper Neumorphism ========== */
+/* .section-wrapper {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 1.5rem;
+  background: #1a1a1a;
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #242424;
+}
+
+body.light-mode .section-wrapper {
+  background: #f5f5f5;
+  box-shadow: 6px 6px 12px #d1d1d1, -6px -6px 12px #ffffff;
+} */

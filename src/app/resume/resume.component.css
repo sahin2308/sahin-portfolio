@@ -1,0 +1,47 @@
+.resume-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    box-shadow: inset 8px 8px 16px #141414,
+                inset -8px -8px 16px #1f1f1f;
+  }
+  
+  .resume-section h2 {
+    font-size: 2rem;
+    margin: -0.7rem 0 -0.5rem;
+  }
+  
+  .resume-section p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .resume-buttons .btn {
+    background: #1e1e1e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.05),
+                6px 6px 12px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .resume-buttons .btn:hover {
+    background: linear-gradient(135deg, #00c6ff, #8a2be2);
+    transform: translateY(-3px);
+    color: #fff;
+  }
+  

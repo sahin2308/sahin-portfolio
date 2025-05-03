@@ -1,0 +1,41 @@
+.about {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  background-color: #1a1a1a;
+  box-shadow: inset 8px 8px 16px #141414, inset -8px -8px 16px #252525;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+  white-space: pre-line;
+}
+
+/* 🌤 Light Theme */
+body[data-theme='light'] .about {
+  background-color: #f4f7f9;
+  color: #1a1a1a;
+  box-shadow:
+    8px 8px 20px rgba(174, 174, 192, 0.5),
+   -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme='light'] .about h2 {
+  color: #0d1117;
+}
+
+body[data-theme='light'] .about-text {
+  color: #333;
+}

@@ -1,0 +1,67 @@
+.connect-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 2rem;
+    box-shadow: inset 8px 8px 16px #141414,
+                inset -8px -8px 16px #1f1f1f;
+    margin: 2rem auto;
+    max-width: 1000px; /* Ensure same width as other sections */
+  }
+  
+  .connect-section h2 {
+    font-size: 2rem;
+    margin: -0.7rem 0 -0.5rem;
+  }
+  
+  .connect-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  .connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .connect-card {
+    background: #1e1e1e;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    min-width: 120px;
+    height: 110px;
+    box-shadow: 
+      -6px -6px 12px rgba(255, 255, 255, 0.03),
+      6px 6px 12px rgba(0, 0, 0, 0.4);
+    color: #00c6ff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .connect-card:hover {
+    transform: scale(1.05);
+    box-shadow: 
+      0 0 15px rgba(0, 198, 255, 0.6),
+      inset 0 0 5px rgba(0, 198, 255, 0.3);
+  }
+  
+  .connect-card span {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .connect-card p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  
